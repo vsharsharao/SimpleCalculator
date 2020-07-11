@@ -1,0 +1,106 @@
+<div class="row">
+  <div class="col-lg-6 col-md-4 col-sm-6">
+    <div class="calculator-body m-5">
+      <table class="table table-bordered">
+        <tbody>
+          <tr class="p2">
+            <td colspan="4" style="text-align: center;">
+              Simple Calculator
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <input
+                class="form-control"
+                type="text"
+                [(ngModel)]="resultValue"
+                readonly
+                id="result"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button
+                class="btn btn-outline-info"
+                (click)="onClear()"
+                id="clear"
+              >
+                AC
+              </button>
+            </td>
+            <td>
+              <button
+                class="btn btn-outline-danger"
+                (click)="onDelete()"
+                id="delete"
+              >
+                Delete
+              </button>
+            </td>
+            <td>
+              <button class="btn btn-outline-success" id="equal">=</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="divide">/</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="btn btn-outline-secondary" id="7">7</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="8">8</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="9">9</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="multiply">*</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="btn btn-outline-secondary" id="4">4</button>
+            </td>
+
+            <td>
+              <button class="btn btn-outline-secondary" id="5">5</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="6">6</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="subtract">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="btn btn-outline-secondary" id="1">1</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="2">2</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="3">3</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="add">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><button class="btn" id="0">0</button></td>
+            <td>
+              <button class="btn btn-outline-secondary" id="dot">.</button>
+            </td>
+            <td>
+              <button class="btn btn-outline-secondary" id="percentile">
+                %
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
